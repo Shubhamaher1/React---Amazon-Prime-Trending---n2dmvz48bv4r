@@ -12,7 +12,8 @@ const App = (props) => {
       {index === 0 ? (
         <button
           data-testid="button-prev"
-          style={{ display: "none" }}
+          disabled={true}
+          // style={{ display: "none", }}
           onClick={() => {
             setIndex(index - 1);
             // setdata(props.slides[index]);
@@ -33,8 +34,9 @@ const App = (props) => {
       )}
       {index === 4 ? (
         <button
+          disabled={true}
           data-testid="button-next"
-          style={{ display: "none" }}
+          // style={{ display: "none" }}
           onClick={() => {
             setIndex(index + 1);
             // setdata(props.slides[index]);
@@ -54,7 +56,11 @@ const App = (props) => {
         </button>
       )}
       {index === 0 ? (
-        <button data-testid="button-restart" style={{ display: "none" }}>
+        <button
+          data-testid="button-restart"
+          //  style={{ display: "none" }}
+          disabled={true}
+        >
           Restart
         </button>
       ) : (
