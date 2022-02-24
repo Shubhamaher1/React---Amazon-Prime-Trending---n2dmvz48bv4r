@@ -17,7 +17,7 @@ const App = (props) => {
             // setdata(props.slides[index]);
           }}
         >
-          prev
+          Prev
         </button>
       )}
       {index === 4 ? null : (
@@ -28,7 +28,7 @@ const App = (props) => {
             // setdata(props.slides[index]);
           }}
         >
-          next
+          Next
         </button>
       )}
       {index === 0 ? null : (
@@ -39,7 +39,7 @@ const App = (props) => {
             // setdata(props.slides[index]);
           }}
         >
-          restart
+          Restart
         </button>
       )}
     </>
