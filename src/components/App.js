@@ -31,7 +31,11 @@ const App = (props) => {
           Next
         </button>
       )}
-      {index === 0 ? null : (
+      {index === 0 ? (
+        <button data-testid="button-restart" style={{ display: "none" }}>
+          Restart
+        </button>
+      ) : (
         <button
           data-testid="button-restart"
           onClick={() => {
